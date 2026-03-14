@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BestEndingHomeScreen.unity
     guid: 38727b470d2e94dd0ab353d44ea4ffed
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 06f58573bafe74e729b7826345545a2a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
