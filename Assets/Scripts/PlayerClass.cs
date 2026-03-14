@@ -6,15 +6,17 @@ using TMPro;
 
 public class PlayerClass : MonoBehaviour
 {
-    public double currFunds = 100;
-    public double busFare = 5;
-    public InventoryClass inventory;
-    public int totalNutrition = 0;
+    public static double currFunds = 100;
+    public static double busFare = 5;
+    public static InventoryClass inventory;
+    public static int totalNutrition = 0;
 
     //variables for grocery list
     public static List<InventoryItem> needToBuy = new List<InventoryItem>();
     public static List<InventoryItem> wantToBuy = new List<InventoryItem>();
-    private TMP_Text m_text;
+    public TMP_Text m_text;
+
+    // public string msg;
 
     // private string list;
 
@@ -37,29 +39,37 @@ public class PlayerClass : MonoBehaviour
         wantToBuy.Add(new InventoryItem("Eggs"));
 
         //text component
-        m_text = GetComponent<TextMeshProUGUI>() ?? gameObject.AddComponent<TextMeshProUGUI>();
-        print("in else");
+        // m_text = GetComponent<TextMeshProUGUI>() ?? gameObject.AddComponent<TextMeshProUGUI>();
+        // print("in else");
         m_text.autoSizeTextContainer = true;
 
         //set text
+        // msg = toString();
         m_text.text = toString();
 
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (updateNeeded) {
-            m_text.SetText(toString());
-            updateNeeded = false;
-        }
+        // if (updateNeeded) {
+        //     print("Updating list");
+        //     updateNeeded = false;
+        // }
     }
+
+
+    /* BUTTON TESTING LOGIC */
+    public void changeGroceryList()
+    {
+        InventoryItem apple = new InventoryItem("Apple", 10.20, 2);
+        addItem(apple);
+        string holder = toString();
+        // Debug.Log(holder);
+        m_text.text = holder;
+        print("after .text call");
+    }
+
 
     //methods
 
@@ -74,7 +84,7 @@ public class PlayerClass : MonoBehaviour
         {
             if (inventory.Contains(item))
             {
-                done += "☑︎" + item.itemName + "\n";
+                done += "X " + item.itemName + "\n";
             }
             else {
                 done += "☐" + item.itemName + "\n";
@@ -86,7 +96,7 @@ public class PlayerClass : MonoBehaviour
         {
             if (inventory.Contains(item))
             {
-                done += "☑︎" + item.itemName + "\n";
+                done += "X " + item.itemName + "\n";
             }
             else {
                 done += "☐" + item.itemName + "\n";
@@ -96,7 +106,7 @@ public class PlayerClass : MonoBehaviour
         return done;
     }
 
-    public void setUpdateNeeded(bool holder)
+    public static void setUpdateNeeded(bool holder)
     {
         updateNeeded = holder;
     }
@@ -104,7 +114,7 @@ public class PlayerClass : MonoBehaviour
     /*
      * pay the bus fare
      */
-    public void payBusFare()
+    public static void payBusFare()
     {
         currFunds -= busFare;
         print("Successfully paid bus fare");
@@ -114,16 +124,17 @@ public class PlayerClass : MonoBehaviour
      * add an item to inventory list
      */
 
-    public void addItem(InventoryItem item)
+    public static void addItem(InventoryItem item)
     {
+        print(item.itemName + "\n");
         inventory.AddItem(item);
         currFunds -= item.getPrice();
         totalNutrition += item.nutritionValue;
-        setUpdateNeeded(true);
+        // setUpdateNeeded(true);
         print("Successfully bought: " + item.itemName);
     }
 
-    public void removeItem(InventoryItem item)
+    public static void removeItem(InventoryItem item)
     {
         inventory.removeItem(item);
         currFunds += item.getPrice();
