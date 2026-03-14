@@ -9,10 +9,15 @@ public class PlayerClass : MonoBehaviour
     public InventoryClass inventory;
     public int totalNutrition = 0;
 
+    void Awake()
+    {
+        inventory = new InventoryClass();
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        inventory = new InventoryClass();
+        
     }
 
     // Update is called once per frame
