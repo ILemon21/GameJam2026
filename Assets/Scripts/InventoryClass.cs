@@ -1,16 +1,8 @@
 using UnityEngine;
+using System.Collections.Generic;
+using System;
 
-public class InventoryClass : MonoBehaviour
-{
-    private List<InventoryItem> inventoryItems; //list of items currently in player inventory
-    int maxNumItems = 5; //max num of items is 5
-    int currentItemCount = 0; //number of items currently in inventory
-
-    public InventoryClass()
-    {
-        inventoryItems = new List<InventoryItem>(); //initializing empty list
-    }
-    public class InventoryItem
+public class InventoryItem : MonoBehaviour
     {
         public string itemName;
         public double price;
@@ -40,8 +32,19 @@ public class InventoryClass : MonoBehaviour
         public bool equals(string name1, string name2)
         {
             //only comparing strings to remove technical discrepancies (ie, for grocery list, bad apple technically equals good apple)
-            return name1.equals(name2);
+            return name1.Equals(name2, StringComparison.OrdinalIgnoreCase);
         }
+    }
+
+public class InventoryClass : MonoBehaviour
+{
+    private List<InventoryItem> inventoryItems; //list of items currently in player inventory
+    int maxNumItems = 5; //max num of items is 5
+    int currentItemCount = 0; //number of items currently in inventory
+
+    public InventoryClass()
+    {
+        inventoryItems = new List<InventoryItem>(); //initializing empty list
     }
 
     //methods
@@ -54,28 +57,24 @@ public class InventoryClass : MonoBehaviour
     {
         if (currentItemCount == maxNumItems)
         {
+            print("Cannot add item - too many!");
             return false;
         }
         //adding item
-        bool check = inventoryItems.Add(item);
-        if (check) {
-            currentItemCount++;
-        }
-        return check;
+        inventoryItems.Add(item);
+        currentItemCount++;
+        return true;
     }
 
     /*
     * @Method remove item parameter from inventory list
     * @Return True if successful, False otherwise
     */
-    public bool removeItem(InventoryItem item)
+    public void removeItem(InventoryItem item)
     {
         //removing item
-        bool check = inventoryItems.Remove(item);
-        if (check) {
-            currentItemCount--;
-        }
-        return check;
+        inventoryItems.Remove(item);
+        currentItemCount--;
     }
 
     /*
