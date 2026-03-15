@@ -49,7 +49,7 @@ public class InventoryItem : MonoBehaviour
 
 public class InventoryClass : MonoBehaviour
 {
-    private List<InventoryItem> inventoryItems; //list of items currently in player inventory
+    private List<InventoryItem> inventoryItems; //list of items currently in player inventory, unique due to using inventory for needToBuy and wantToBuy
     int maxNumItems = 5; //max num of items is 5
     int currentItemCount = 0; //number of items currently in inventory
 
@@ -124,17 +124,5 @@ public class InventoryClass : MonoBehaviour
             }
         }
         return false;
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }

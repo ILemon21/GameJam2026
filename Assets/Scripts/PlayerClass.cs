@@ -6,7 +6,7 @@ using TMPro;
 
 public class PlayerClass : MonoBehaviour
 {
-    public static double currFunds = 100;
+    public static double currFunds = 50;
     public static double busFare = 5;
     public static InventoryClass inventory;
     public static int totalNutrition = 0;
@@ -55,7 +55,11 @@ public class PlayerClass : MonoBehaviour
     /* BUTTON TESTING LOGIC */
     public void changeGroceryList(InventoryItem item)
     {
-
+        if (currFunds < item.getPrice() + busFare)
+        {
+            print("Cannot afford food!");
+            return;
+        }
         // InventoryItem apple = new InventoryItem("Apple", 10.20, 2);
         // m_text = GetComponent<TextMeshProUGUI>() ?? gameObject.AddComponent<TextMeshProUGUI>();
         addItem(item);
@@ -122,7 +126,7 @@ public class PlayerClass : MonoBehaviour
      * add an item to inventory list
      */
 
-    public static void addItem(InventoryItem item)
+    public void addItem(InventoryItem item)
     {
         print(item.itemName + "\n");
         inventory.AddItem(item);
