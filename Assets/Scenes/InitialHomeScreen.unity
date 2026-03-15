@@ -1076,7 +1076,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Mom: Hey! Before you try to sneak out to play video games or whatever
     you teenagers do, I need you to get some food for dinner tonight, we are all
-    out and I need to put __ to sleep, she\u2019s running a high fever."
+    out and I need to put the baby to sleep, she\u2019s running a high fever."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
   m_sharedMaterial: {fileID: 4459046702426897427, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
@@ -1169,9 +1169,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypewriterEffect
   textComponent: {fileID: 1983865056}
-  fullText: "Hey! Before you try to sneak out to play video games or whatever you
-    teenagers do, I need you to get some food for dinner tonight, we are all out
-    and I need to put __ to sleep, she\u2019s driving me insane."
+  fullText: "Mom: Hey! Before you try to sneak out to play video games or whatever
+    you teenagers do, I need you to get some food for dinner tonight, we are all
+    out and I need to put the baby to sleep, she\u2019s running a high fever."
   delay: 0.085
 --- !u!1 &2030200619
 GameObject:
@@ -1212,8 +1212,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Also go ask your brothers what they want, I\u2019ll give you some money
-    for the bus and the groceries. Just come home when you\u2019re done."
+  m_text: "Also go ask your siblings what they want, I\u2019ll give you some money
+    for the bus and the groceries."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
   m_sharedMaterial: {fileID: 4459046702426897427, guid: 2e2fe0bebe93243adb4f470ce84ef061, type: 2}
@@ -1325,8 +1325,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TypewriterEffect
   textComponent: {fileID: 2030200620}
-  fullText: "Also go ask your brothers what they want, I\u2019ll give you some money
-    for the bus and the groceries. Just come home when you\u2019re done."
+  fullText: "Also go ask your siblings what they want, I\u2019ll give you some money
+    for the bus and the groceries."
   delay: 0.065
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
