@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 175289d35a761447cbc89644f152956e
+guid: eb52ee399c578443b98f7adc4b0eff88
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4911007776997675480
-    second: Ramen_0
+      213: 5247816500109422983
+    second: Chips_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Ramen_0
+      name: Chips_0
       rect:
         serializedVersion: 2
-        x: 45
+        x: 114
         y: 68
-        width: 830
-        height: 1083
+        width: 761
+        height: 1037
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8d19025bd87672440800000000000000
-      internalID: 4911007776997675480
+      spriteID: 781b47f7d4df3d840800000000000000
+      internalID: 5247816500109422983
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Ramen_0: 4911007776997675480
+      Chips_0: 5247816500109422983
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
