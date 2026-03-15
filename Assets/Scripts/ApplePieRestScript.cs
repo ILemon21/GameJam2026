@@ -15,7 +15,7 @@ public class ApplePieRestScript: MonoBehaviour
     void Start()
     {
         //cost 75 cents bc at food vendor
-        myItem = new InventoryItem("Apple Pie", 2, 5);
+        myItem = new InventoryItem("Apple Pie", 23, 5);
         myItem.setGameObject(go); // gameObject is the gameObject that this script is attached to
         price.text = myItem.getPrice().ToString();
         PlayerCreator c = new PlayerCreator();
