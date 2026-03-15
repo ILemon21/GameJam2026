@@ -62,7 +62,7 @@ public class BusGameManager3 : MonoBehaviour
         // If the bags are too heavy, they give up and trigger the Failed Ending
         StopAllCoroutines();
         Time.timeScale = 1;
-        SceneManager.LoadScene("FailedEndingHomeScreen"); 
+        SceneManager.LoadScene("FinalHomeScreen"); 
     }
 
     void TriggerDecision(string message, string btnA, string btnB)

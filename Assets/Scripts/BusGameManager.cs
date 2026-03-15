@@ -55,7 +55,7 @@ public class BusGameManager : MonoBehaviour
     {
         StopAllCoroutines();
         Time.timeScale = 1;
-        SceneManager.LoadScene("FailedEndingHomeScreen"); 
+        SceneManager.LoadScene("FinalHomeScreen"); 
     }
 
     void TriggerDecision(string message, string btnA, string btnB)

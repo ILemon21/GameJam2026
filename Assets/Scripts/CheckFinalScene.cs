@@ -23,7 +23,7 @@ public class CheckFinalScene : MonoBehaviour
         }
         else if (GameManager.nutritionScore >= 5) 
         {
-            SceneManager.LoadScene("MiddleEndingScene");
+            SceneManager.LoadScene("MidEndingHomeScreen");
         }
         else 
         {
