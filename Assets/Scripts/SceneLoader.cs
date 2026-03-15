@@ -16,4 +16,14 @@ public class SceneLoader : MonoBehaviour
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex + 1);
     }
+    public void LoadPreviousScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        int previousSceneIndex = currentSceneIndex - 1;
+        if (previousSceneIndex >= 0) {
+            SceneManager.LoadScene(previousSceneIndex);
+        } else {
+            Debug.LogWarning("You are at the first scene! Nowhere to go back.");
+        }
+    }
 }
