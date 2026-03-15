@@ -47,6 +47,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalHomeScreen.unity
     guid: 10e90f7ee9851402ca10decd5606186b
+  - enabled: 1
+    path: Assets/Scenes/BusScene3.unity
+    guid: 3ad7834577ddb4960bc52363aca606d3
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
