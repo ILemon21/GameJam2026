@@ -40,7 +40,7 @@ public class PlayerClass : MonoBehaviour
         wantToBuy.Add(new InventoryItem("Eggs"));
 
         //text component
-        
+
         // print("in else");
         // m_text.autoSizeTextContainer = true;
 
