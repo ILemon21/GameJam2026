@@ -486,7 +486,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 6936655672756443884, guid: 33be2346938a74c4a889b62ca7a0c219, type: 3}
+  m_Sprite: {fileID: 6936655672756443884, guid: ba2d72ce6e7930545b2ccae607aa0595, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -635,7 +635,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FadeAwayScript
   mode: 1
-  fadeTime: 12
+  fadeTime: 13
   nextObject: {fileID: 238911905}
 --- !u!114 &749550770
 MonoBehaviour:
@@ -1118,7 +1118,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FadeAwayScript
   mode: 1
-  fadeTime: 16
+  fadeTime: 13
   nextObject: {fileID: 1997057701}
 --- !u!114 &1394800489
 MonoBehaviour:
@@ -1236,7 +1236,7 @@ MonoBehaviour:
   textComponent: {fileID: 1394800489}
   fullText: If a mother is working all day she will buy the fried snack on the street
     because she doesn't have the time or the money for the healthier alternative.
-  delay: 0.085
+  delay: 0.04
 --- !u!1 &1415464041
 GameObject:
   m_ObjectHideFlags: 0
@@ -1737,7 +1737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FadeAwayScript
   mode: 1
-  fadeTime: 10
+  fadeTime: 11
   nextObject: {fileID: 749550767}
 --- !u!114 &1796938162
 MonoBehaviour:
