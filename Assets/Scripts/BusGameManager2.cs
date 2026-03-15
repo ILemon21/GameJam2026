@@ -53,7 +53,7 @@ public class BusGameManager2 : MonoBehaviour
         }
         else if (stopTriggered) {
             ClosePopup();
-            StartCoroutine(WaitAndLoad("RestaurantCutscene", 3f));
+            StartCoroutine(WaitAndLoad("Restaurant", 3f));
         }
     }
 

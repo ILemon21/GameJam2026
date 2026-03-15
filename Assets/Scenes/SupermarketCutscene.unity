@@ -636,7 +636,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
   textBoxes:
   - {fileID: 1230461332}
-  sceneToLoadAtEnd: BusScene2
+  sceneToLoadAtEnd: FinalHomeScreen
 --- !u!4 &1058163190
 Transform:
   m_ObjectHideFlags: 0

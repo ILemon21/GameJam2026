@@ -53,7 +53,7 @@ public class BusGameManager3 : MonoBehaviour
         // Choosing to endure the pain to finish the errand
         else if (stopTriggered) {
             ClosePopup();
-            StartCoroutine(WaitAndLoad("SupermarketCutscene", 3f));
+            StartCoroutine(WaitAndLoad("Store", 3f));
         }
     }
 

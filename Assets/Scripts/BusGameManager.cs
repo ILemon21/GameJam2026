@@ -47,7 +47,7 @@ public class BusGameManager : MonoBehaviour
         }
         else if (stopTriggered) {
             ClosePopup();
-            StartCoroutine(WaitAndLoad("ConvenienceCutscene", 3f));
+            StartCoroutine(WaitAndLoad("StreetVendor", 3f));
         }
     }
 
