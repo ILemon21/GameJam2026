@@ -748,6 +748,9 @@ PrefabInstance:
     - {fileID: 1206167988469215066, guid: 852af9750a46e83418e2b7fd890711d0, type: 3}
     - {fileID: 2377383136322634552, guid: 852af9750a46e83418e2b7fd890711d0, type: 3}
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 8475973405168084686, guid: 852af9750a46e83418e2b7fd890711d0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2106298600}
     - targetCorrespondingSourceObject: {fileID: 415757137640705560, guid: 852af9750a46e83418e2b7fd890711d0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1450691559}
@@ -1307,11 +1310,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8509154700486240312, guid: 33dae41123f66c3459e4d81735a6301f, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 344.47244
+      value: -334
       objectReference: {fileID: 0}
     - target: {fileID: 8509154700486240312, guid: 33dae41123f66c3459e4d81735a6301f, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 104.94476
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 8509154700486240312, guid: 33dae41123f66c3459e4d81735a6301f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
